@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Telco Papa Ltd</title>
+  <meta name="description" content="Privacy Policy for Meow Mobile, a consumer brand operated by Telco Papa Ltd, an authorized MVNO on the AT&amp;T network.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Privacy Policy — Telco Papa Ltd">
+  <meta property="og:description" content="Privacy Policy for Meow Mobile, operated by Telco Papa Ltd.">
+  <meta property="og:url" content="https://telcopapa.com/privacy.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Privacy Policy — Telco Papa Ltd">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="canonical" href="https://telcopapa.com/privacy.html">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #FAF9F6;
+      --bg-dark: #0B1120;
+      --text: #1B1F3B;
+      --text-muted: #5A5F7A;
+      --accent: #FF4D00;
+      --accent-glow: #FF6B2B;
+      --link: #2563EB;
+      --card-bg: #FFFFFF;
+      --border: #E2E0DC;
+      --max-w: 720px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── ACCENT BAR ── */
+    body::before {
+      content: '';
+      display: block;
+      height: 6px;
+      background: linear-gradient(90deg, var(--accent) 0%, var(--accent-glow) 40%, var(--accent) 100%);
+    }
+
+    /* ── BACK LINK ── */
+    .back-link {
+      display: inline-block;
+      padding: 32px 24px 0;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .back-link a {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .back-link a:hover {
+      color: var(--accent);
+    }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 48px 24px 40px;
+    }
+
+    .page-header h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 900;
+      font-size: clamp(2rem, 6vw, 3rem);
+      color: var(--text);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .page-header h1 span {
+      color: var(--accent);
+    }
+
+    .page-header .effective-date {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      width: 48px;
+      height: 4px;
+      background: var(--accent);
+      border: none;
+      margin: 0 0 40px;
+      border-radius: 2px;
+    }
+
+    /* ── LEGAL CONTENT ── */
+    .legal {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px 80px;
+    }
+
+    .legal p {
+      margin-bottom: 16px;
+      line-height: 1.75;
+      color: var(--text);
+    }
+
+    .legal h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      font-size: 1.6rem;
+      color: var(--text);
+      margin-top: 56px;
+      margin-bottom: 24px;
+      letter-spacing: -0.02em;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .legal h3 {
+      font-family: 'Geist', sans-serif;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: var(--text);
+      margin-top: 40px;
+      margin-bottom: 16px;
+    }
+
+    .legal h4 {
+      font-family: 'Geist', sans-serif;
+      font-weight: 600;
+      font-size: 1.05rem;
+      color: var(--text);
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .legal h5 {
+      font-family: 'Geist', sans-serif;
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text);
+      margin-top: 24px;
+      margin-bottom: 10px;
+    }
+
+    .legal h6 {
+      font-family: 'Geist', sans-serif;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    .legal a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .legal a:hover {
+      border-color: var(--link);
+    }
+
+    .legal ul, .legal ol {
+      margin-bottom: 16px;
+      padding-left: 24px;
+    }
+
+    .legal li {
+      margin-bottom: 8px;
+      line-height: 1.75;
+      color: var(--text);
+    }
+
+    .legal strong {
+      font-weight: 600;
+    }
+
+    .legal .intro-text {
+      font-size: 1.05rem;
+      color: var(--text);
+      line-height: 1.8;
+    }
+
+    .legal .contact-block {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 16px;
+    }
+
+    .legal .contact-block p {
+      margin-bottom: 4px;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--bg-dark);
+      padding: 48px 24px;
+      text-align: center;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.85rem;
+      line-height: 1.8;
+    }
+
+    .footer__inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .footer__copy {
+      margin-bottom: 6px;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .footer__mvno {
+      margin-bottom: 20px;
+      font-size: 0.8rem;
+    }
+
+    .footer__links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer__links a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 0.8rem;
+      transition: color 0.2s;
+    }
+
+    .footer__links a:hover {
+      color: var(--accent);
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .page-header { animation: fadeUp 0.7s ease both; }
+    .legal { animation: fadeUp 0.7s ease 0.15s both; }
+  </style>
+</head>
+<body>
+
+  <!-- BACK LINK -->
+  <div class="back-link">
+    <a href="/">&larr; Back to Home</a>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <h1>Privacy Policy<span>.</span></h1>
+    <p class="effective-date">Effective: December 20, 2025</p>
+  </header>
+
+  <!-- LEGAL CONTENT -->
+  <main class="legal">
+    <hr class="divider">
+
+    <!-- OPENING STATEMENT -->
+    <p class="intro-text">Your information and privacy are important to us.</p>
+
+    <p>This Privacy Policy recognizes the importance of protecting your personal information. It explains how Meow Mobile ("<strong>Meow Mobile</strong>," "<strong>we</strong>," "<strong>our</strong>," "<strong>us</strong>") and our affiliated companies, including Telco Papa Ltd. the carrier of record for all regulated and taxable wireless services provided by us, collects, uses, protects, and discloses personal information ("<strong>Personal Information</strong>") when you use the Meow Mobile website ("<strong>Site</strong>") and/or our wireless telecommunications services ("<strong>Services</strong>"), including our mobile application ("<strong>Mobile App</strong>"). This Privacy Policy also explains your choices for managing your information preferences and exercising privacy rights available under applicable privacy laws.</p>
+
+    <p>As discussed in detail in this Privacy Policy, we use cookies, session replay technologies (e.g., tracking your online session), and other tracking technologies. We may also share data with service providers.</p>
+
+    <!-- SCOPE AND EFFECTIVE DATE -->
+    <h2>Scope and Effective Date</h2>
+
+    <p>This Privacy Policy applies to the Personal Information handled or otherwise processed by us in our business, including information we collect through our products and Services, Site, our Mobile App, or the networks supporting your Services. We may collect Personal Information from you and anyone who uses your Meow Mobile products or Services under your account. You are responsible for making sure that all of your users agree. This Privacy Policy does not apply in certain cases when you are using our products and Services and other companies collect your Personal Information including, but not limited to, when you visit third-party websites, you purchase our products and services from a retailer, you connect to a social networking service or another company's Wi-Fi network, or if you provide information to another company that is included as part of your monthly rate plan ("<strong>Plan</strong>") or other products and services you purchase from us, even if accessible through our Services. In those cases, any information you provide to those companies may be subject to their notice, or to both their notice and our notice. We encourage you to visit and review those third parties' privacy policies.</p>
+
+    <!-- PERSONAL INFORMATION WE COLLECT -->
+    <h2>Personal Information We Collect</h2>
+
+    <h3>Information you provide to us</h3>
+
+    <p>Depending on how you use our Site, Mobile App, and Services, we may collect the following types of information:</p>
+
+    <h4>Account and contact information</h4>
+
+    <p>If you create an online account, request information about us, or use our Services, we may collect certain information that can be used to identify you, including your first and last name, telephone numbers (including port-in numbers), email addresses, customer numbers, username and password, date of birth, billing address, biographical information, unique personal identifiers, online identifiers, Internet Protocol addresses, service provider name, or device identifiers ("<strong>Contact Data</strong>"). We may also collect any other information you add to your account profile, including information you may provide voluntarily, such as your ethnicity or gender. The decision to provide certain Personal Information is optional.</p>
+
+    <h4>CPNI (Customer Proprietary Network Information)</h4>
+
+    <p>CPNI is information related to the telecommunications services you purchase from us, including your Plan and information about the calls and texts you place and receive, including the type, location, destination, and amount of voice calling or text messaging you use. Your telephone number and your name are not CPNI. Under federal law, you have a right, and we have a duty, to protect the confidentiality of your CPNI. We may use your CPNI to process number port-in requests, for customer service support, and for service provisioning and maintenance. We may also use CPNI to create aggregate data or information that does not personally identify you. We do not share CPNI with anyone outside of our affiliates, authorized agents, or vendors without your consent, except for court orders, fraud detection, providing service, network operations and security, aggregate (grouped) information that doesn't identify you personally, and as otherwise authorized by law.</p>
+
+    <h4>Data about others</h4>
+
+    <p>We may collect information about the names, phone numbers, and other information you provide about your authorized users.</p>
+
+    <h4>How you use our Sites and Mobile Applications</h4>
+
+    <p>We may collect information about your browsing, searching, and activities, such as your IP address, device numbers and identifiers, web addresses of the sites you come from and go to next, screen recordings, keystrokes, cursor movements, screen interactions, and clicks, browser and operating system information, platform type, connection speed, application performance (e.g., crash logs, battery life, loading time, latency, framerate or technical diagnostics), and other attributes.</p>
+
+    <h4>Session Recordings</h4>
+
+    <p>We collect information when you visit our website to better understand how you use it and to identify any quality control issues. During your visit, we may capture screen interactions (e.g., mouse movements, clicks, taps, scrolls), page navigation (includes the pages you visited and in what order), form interactions (the text you enter into form fields, except password fields, which are automatically masked), click paths (the sequence of elements interacted with), time on page, and error encounters. Other form fields, such as email, phone, and name, may be visible in recordings.</p>
+
+    <h4>Inferences</h4>
+
+    <p>We may use inferences from any collected information to create a profile about your preferences and characteristics.</p>
+
+    <h4>Job applications</h4>
+
+    <p>We may post job openings and opportunities. If you reply to one of these postings by submitting your application, resume, and/or cover letter, we will collect and use the personal information you provide.</p>
+
+    <h4>User Submissions</h4>
+
+    <p>Certain parts of the Site may require you to include certain Contact Data to receive further information about Meow Mobile or for other purposes. Your submissions are voluntary.</p>
+
+    <h4>Other Data</h4>
+
+    <p>We may collect other data, which we will use as described in this Privacy Policy or as otherwise disclosed at the time of collection.</p>
+
+    <h4>Security and Fraud Protection</h4>
+
+    <p>We collect information to authenticate your identity when you contact us or use our mobile applications.</p>
+
+    <h4>Transactions and Payment Data</h4>
+
+    <p>We may collect information about your payment transactions, payment history data, order numbers, and details about services you received.</p>
+
+    <h4>Surveys</h4>
+
+    <p>We may also contact you to ask you to participate in surveys. If you decide to participate, you may be asked to provide certain information, including Personal Information.</p>
+
+    <!-- Information collected automatically or from third parties -->
+    <h3>Information collected automatically or from third parties</h3>
+
+    <p>We may collect Personal Information automatically using specific techniques when you use our Services:</p>
+
+    <h4>Location Data</h4>
+
+    <p>We use location information to route wireless communications and to provide 911 service, which allows emergency services to locate your general location. We may disclose, without your consent, the approximate location of your wireless device to a governmental entity or law enforcement authority when we are served with lawful process or reasonably believe there is an emergency involving risk of death or serious physical harm. Depending on your device type, you may also be able to obtain a wide array of services based on the location of your device (for example, driving directions, enhanced 411 Directory Assistance, or search results, etc.). These data services, known as Location-Based Services ("<strong>LBS</strong>"), are made available by us and other entities, usually via applications. These services use various location technologies and acquire location data from multiple sources. These applications and services use various location technologies (including Global Positioning Satellite ("<strong>GPS</strong>"), Assisted GPS ("<strong>AGPS</strong>"), cell ID and enhanced cell ID technologies) to identify the approximate location of a device, which is then used in conjunction with the application to improve the user's experience (for example, to provide driving directions, to provide enhanced 411 Directory Assistance or search results, etc.). LBS may or may not involve any interaction with or dependency on our Network Partner, and location-based services may or may not look to our network to obtain location data. Where our network service provider ("<strong>Network Partner</strong>") allows third parties the capability of accessing data about your location that is derived from our Network Partner, our Network Partner requires those third parties to observe specific privacy and security protections consistent with this policy. It is essential that you understand the location capabilities and settings of your Third-Party Device, and that you carefully read and understand the terms under which these services are provided &ndash; whether by us or another entity. You should carefully review the privacy policies and other terms of third parties with whom you have authorized the sharing of your location information, and you should consider the risks involved in disclosing your location information to other people. Where we provide a location-based service, you will receive notice of the location features of the service, and the collection of location data is with your consent. You will be provided options for managing when and how such information should be shared.</p>
+
+    <h4>Automatic data collection</h4>
+
+    <p>We, our service providers, and our business partners may automatically log information about you, your computer or mobile device, and your interaction over time with the Services, our communications, and other online services, such as:</p>
+
+    <h5>Device Data Collection</h5>
+
+    <p>When you download and use our Services and visit our Sites, we may automatically collect your internet protocol ("<strong>IP</strong>") address, user settings, MAC address, user data including email, name and location, browser information including plug-ins, device type, operating system, time zone setting, unique identifiers (including advertising identifiers), language settings, mobile device carrier, and radio/network information (e.g., Wi-Fi, LTE, 5G).</p>
+
+    <h5>Online Activity Data</h5>
+
+    <p>When you access our Site or Mobile Applications, we may automatically collect the type of web browser you use, your information service provider, the pages or screens you view, how long you spent on a page or screen, navigation paths between pages or screens, information about your activity on a page or screen, access times and duration of access, and whether you opened our emails and clicked links within them.</p>
+
+    <h5>Tracking Technologies</h5>
+
+    <p>Some of the automatic collection described in the Personal Information we collect section above is facilitated by the following technologies, which we may place, or which may be placed by our service providers and business partners:</p>
+
+    <h6>Cookies</h6>
+
+    <p>Cookies are small text files placed in device browsers that store preferences and facilitate and enhance your experience. We use cookies and other technologies to help us tailor our Sites to our users, offerings, and marketing. Some features of our Sites may not work as intended if you decline to allow cookies or deactivate cookies. We use multiple types of cookies: operationally necessary, performance-related, functionality-related, and advertising or target-related. You may have software on your computer that will allow you to decline or deactivate Internet cookies, but if you do so, some site features may not work correctly for you. For instructions on removing existing cookies from your hard drive and/or blocking cookies from all websites, go to your Internet service provider, operating system, or browser's website for detailed instructions.</p>
+
+    <p><strong>Operationally necessary</strong><br>
+    This includes Technologies that allow you access to our Services, applications, and tools required to identify irregular site behavior, prevent fraudulent activity, engage in network management, improve security, or use our functionality. These cookies will always be on and cannot be switched off in our systems.</p>
+
+    <p><strong>Performance related</strong><br>
+    We may use Technologies to assess the performance of our Services, including as part of our analytic practices to help us understand how our visitors use the Services (see "<strong>Analytics</strong>" below).</p>
+
+    <p><strong>Functionality related</strong><br>
+    We may use Technologies that allow us to offer you enhanced functionality when you access or use our Services. This may include identifying you when you sign into our Services or keeping track of your specified preferences, interests, or past items viewed.</p>
+
+    <p><strong>Advertising or targeting related</strong><br>
+    We may use first-party or third-party Technologies to deliver content on our Services or third-party sites, including ads relevant to your interests.</p>
+
+    <h6>Pixel Tags or Web Beacons</h6>
+
+    <p>Pixel tags (also known as web beacons or clear GIFs) are pieces of code embedded in our Services that collect information about engagement on our Services. Using pixel tags allows us to record, for example, that a user has visited a particular web page or clicked on a specific advertisement. We may also include web beacons in emails to understand whether messages have been opened, acted on, or forwarded.</p>
+
+    <h6>Mobile Application Software Development Kits ("SDKs")</h6>
+
+    <p>SDKs are third-party computer code that may be used for various purposes, including providing us with analytics regarding the use of our mobile applications, integrating with social media, adding features or functionality to our app, or facilitating online advertising. SDKs may also enable third parties to collect information directly via our Mobile Applications.</p>
+
+    <p>See "<a href="#your-privacy-rights-and-choices">Your Rights and Choices</a>" below to understand your choices regarding these Technologies.</p>
+
+    <h4>Analytics</h4>
+
+    <p>We may use website analytics and other third-party tools to provide you with the best possible experience with our platforms, Site, Mobile Applications, and offerings. Some of our analytics partners include, but are not limited to:</p>
+
+    <h5>Google Analytics</h5>
+
+    <p><a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google Analytics</a> provides statistics and analytical tools to assist with search engine optimization and marketing purposes. You can <a href="https://policies.google.com/privacy?hl=en&fg=1#infochoices" target="_blank" rel="noopener">opt out</a> of Google's collection and processing of data generated by your use of the Services.</p>
+
+    <h5>Meta Pixel with Advanced Matching</h5>
+
+    <p>We use Meta (Facebook) to track conversions, measure advertising campaign effectiveness, and build custom audiences for targeted advertising. This service uses cookies for identifying and tracking visitors across our website, recording actions such as completing signup surveys, creating orders, and processing payments, and matching this activity to Facebook and Instagram accounts for advertising attribution purposes. See its <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener">Privacy Policy</a> for more information. You can object to the collection of your data by Facebook pixel, or to the use of your data for the purpose of displaying Facebook ads, by contacting the following address while logged into your Facebook account: <a href="https://www.facebook.com/settings?tab=ads" target="_blank" rel="noopener">https://www.facebook.com/settings?tab=ads</a>.</p>
+
+    <h5>PostHog</h5>
+
+    <p>We use PostHog to provide product analytics, event tracking, session recordings, and user identification that help us understand how customers use our website and identify usability issues. This service uses cookies for tracking user events and page views, recording session activity including screen interactions and form inputs, and identifying users across sessions. Visit its <a href="https://posthog.com/privacy" target="_blank" rel="noopener">Privacy Policy</a> to learn more.</p>
+
+    <h5>AppsFlyer</h5>
+
+    <p>We use AppsFlyer to measure mobile app attribution, analyze marketing campaign performance, and track app installs and in-app conversions. This service uses cookies and device identifiers for identifying which marketing channels and campaigns drive app installations, tracking in-app events and user actions, and attributing conversions to specific advertising sources. Visit its <a href="https://www.appsflyer.com/legal/privacy-policy/" target="_blank" rel="noopener">Privacy Policy</a> to learn more. Users may opt out of AppsFlyer tracking.</p>
+
+    <h5>Chatbot Technologies</h5>
+
+    <p>The chatbot on our website provides AI-powered customer support, delivering automated assistance and connecting users with support resources. Our chatbot technology uses cookies to identify users, store chat session information, and collect usernames, email addresses, and phone numbers to provide personalized support context. By using this chatbot, you consent to the collection and use of the data as described.</p>
+
+    <!-- Information from other sources -->
+    <h3>Information from other sources</h3>
+
+    <p>We may obtain Personal Information about you from other sources, including through third-party services and organizations, to supplement your information. For example:</p>
+
+    <h4>Business development and strategic partnerships</h4>
+
+    <p>We may collect Personal Information from individuals, third-party services, and organizations to assess and pursue potential business opportunities.</p>
+
+    <h4>Fraud and security</h4>
+
+    <p>We may collect information from other third-party providers for identity verification, security monitoring, and other services that help us protect our Services.</p>
+
+    <h4>Service Providers</h4>
+
+    <p>We may collect information from marketing partners, third-party integrations, publishers, retailers (including those from whom you purchased a Meow Mobile product before commencing service), and others participating in our marketing programs.</p>
+
+    <h4>Users of the Service</h4>
+
+    <p>We may collect information from users of the Services who share information with us when you communicate with them or when you save your contact details to their mobile devices.</p>
+
+    <!-- Collection and Use of Sensitive Personal Information -->
+    <h3>Collection and Use of Sensitive Personal Information</h3>
+
+    <p>We collect the following categories of sensitive Personal Information (as defined under specific US state privacy laws) from consumers:</p>
+
+    <ul>
+      <li>Payment history;</li>
+      <li>Your Account information and PIN data from your former provider for port-in requests;</li>
+      <li>Account balance and billing information;</li>
+      <li>Precise location information; and</li>
+      <li>Contents of communications (when applicable to wireless services).</li>
+    </ul>
+
+    <p>Meow Mobile also does not use sensitive personal information to infer characteristics about you.</p>
+
+    <!-- HOW WE USE YOUR PERSONAL INFORMATION -->
+    <h2>How We Use Your Personal Information</h2>
+
+    <p>We use your Personal Information for various business purposes, including providing our Services, administrative purposes, and marketing products and services that may interest you, whether from Meow Mobile or nonaffiliated third parties, as described below. When we process your Personal Information, we do so when</p>
+
+    <p>(i) needed to perform our responsibilities in connection with our obligations to you,</p>
+    <p>(ii) we have a legitimate interest in processing your personal information,</p>
+    <p>(iii) we have a valid legal basis for doing so, and</p>
+    <p>(iv) We have your consent to do so.</p>
+
+    <p>We retain Personal Information about you for as long as necessary to provide you with the Services. Sometimes, we keep your Personal Information for an extended period of time if required to comply with our legal obligations or as permitted by applicable law. Afterward, we retain some information in a de-identified and/or aggregated form, but not in a way that would identify you personally. We may use automation, including artificial intelligence, to assist us with these uses.</p>
+
+    <h3>To Provide our Services</h3>
+
+    <p>We use your information to fulfill our contract with you and provide you with our Services, such as:</p>
+
+    <ul>
+      <li>Managing your products and services, and accounts;</li>
+      <li>Providing access to certain features of our Services;</li>
+      <li>Processing wireless service activation, porting, and provisioning;</li>
+      <li>Providing wireless telecommunications services including voice, text, and data;</li>
+      <li>Routing wireless communications and providing 911 emergency services;</li>
+      <li>Answering requests for customer or technical support;</li>
+      <li>Communicating with you about your account, activities on our Services, and policy changes;</li>
+      <li>Billing and processing your payment methods for the Services;</li>
+      <li>Providing advertising, analytics, and marketing services;</li>
+      <li>Processing applications if you apply for a job we post on our Services;</li>
+      <li>Providing, developing, customizing, and personalizing the Services, including training artificial intelligence models (e.g., customer service, improving our Services, detecting spam, fraud prevention, etc.)</li>
+      <li>Providing you with customized materials about offers, products, and services that may be of interest, including new content or services from us or nonaffiliated third parties; and</li>
+      <li>Using the information for internal business purposes, such as data analysis, benchmarking, audits, research, analysis, studies, or surveys, and identifying usage trends.</li>
+    </ul>
+
+    <h3>Administrative Purposes</h3>
+
+    <p>We use your information for various administrative purposes, such as:</p>
+
+    <ul>
+      <li>Pursuing our legitimate interests, direct marketing, research and development (including marketing research), network and information security, and fraud prevention;</li>
+      <li>Detecting security incidents, protecting against malicious, deceptive, fraudulent, or illegal activity, and prosecuting those responsible for that activity;</li>
+      <li>Measuring interest and engagement in our Services;</li>
+      <li>Researching and developing products, services, marketing, or security procedures to improve their performance, resilience, reliability, or efficiency;</li>
+      <li>Improving, upgrading, or enhancing our Services and network infrastructure;</li>
+      <li>Monitoring internal sales and other metrics;</li>
+      <li>Managing and developing our business and operations;</li>
+      <li>Ensuring internal quality control and safety;</li>
+      <li>Authenticating and verifying your identities, including requests to exercise your rights under this Privacy Policy;</li>
+      <li>Auditing relating to interactions, transactions, and other compliance activities;</li>
+      <li>Enforcing our Terms of Service, Acceptable Use Policy, and other policies; and</li>
+      <li>Complying with our legal obligations, protecting your vital interests, or as may be required for the public good.</li>
+    </ul>
+
+    <h3>Marketing and Advertising Products and Services from Meow Mobile or Nonaffiliated Third Parties</h3>
+
+    <p>We work with third-party marketing and advertising companies ("<strong>Ad Networks</strong>"). These companies may collect and use information about your use of the Mobile Applications or Services to provide targeted advertisements about goods and services that may interest you. Advertisements may be shown via the Site, the Services, Mobile Applications, or third-party websites. These companies may place or recognize a unique cookie on your computer or use other technologies like Web beacons.</p>
+
+    <p>Our Privacy Policy does not cover any use of information that an Ad Network may collect from you. It also does not cover any information you may provide to an Ad Network or an advertiser whose goods or services are advertised through the Site or the Services. If you wish not to use this information to serve targeted ads, visit <a href="https://adssettings.google.com/u/0/authenticated?hl=en" target="_blank" rel="noopener">DoubleClick's opt-out page</a> or the Network Advertising Initiative opt-out page at <a href="http://optout.aboutads.info/#!/" target="_blank" rel="noopener">http://optout.aboutads.info/#!/</a>. Please note that this does not opt you out of being served advertising. You will continue to receive generic ads. You can also opt out of targeted ads on mobile devices by logging into your Meow Mobile account and opting out of personalized ads. You can also refer to information provided by your device manufacturer or mobile carrier for additional instructions for opting out of targeted advertising.</p>
+
+    <h3>Other Purposes</h3>
+
+    <h4>Automated decision-making</h4>
+
+    <p>We may engage in automated decision-making by analyzing your online behavior and interests to recommend specific products or services, including in connection with AI and ML models. The processing of your Personal Information will not result in a decision based solely on automated processing that significantly affects you unless such a decision is necessary as part of a contract we have with you, we have a proper legal basis, we have your consent, or we are permitted by law to engage in such automated decision making. If you have questions about our automated decision-making, please get in touch with us as outlined in "<a href="#contact-us">Contact Us</a>" below.</p>
+
+    <h4>Artificial Intelligence and Automated Decision-Making</h4>
+
+    <p>We may engage in automated decision-making by analyzing your online behavior and interests to recommend specific products or services, including in connection with AI and machine learning (ML) models. We use the following information to power our AI recommendation system: your browsing history and interactions with our platform; services you have previously purchased or shown interest in; demographic information you've provided; device and usage data; and information about your preferences and settings. Our AI systems analyze patterns in your usage and preferences to predict which services may be most relevant to you, and these recommendations are generated automatically. They may be displayed on your dashboard, in email communications, and throughout our platform. We do not use your personal data to train our AI models; however, we may use anonymized and aggregated data to improve our AI systems, and with your consent, we may use your interactions to improve our AI models. While we strive for accuracy, AI recommendations are predictive in nature. They may not always reflect your current interests or needs, and you are not obligated to follow any AI-generated recommendations.</p>
+
+    <h4>Consent</h4>
+
+    <p>We may use Personal Information for other purposes disclosed to you when you provide Personal Information or with your consent.</p>
+
+    <h4>Using de-identified and aggregated information</h4>
+
+    <p>We might also share information collected from you from the Site with a third party if that information has been de-identified or aggregated in a way that does not directly identify you.</p>
+
+    <!-- DISCLOSING YOUR PERSONAL INFORMATION TO THIRD PARTIES -->
+    <h2>Disclosing Your Personal Information to Third Parties</h2>
+
+    <p>We do not sell your specific Personal Information to third parties for monetary consideration.</p>
+
+    <p>We may disclose your Personal Information to third parties for various business purposes, including to provide our Service, to help respond to customer service inquiries, to protect us or others, or in the event of a significant business transaction such as a merger, sale, or asset transfer, as described below. We do not share your information with third parties who are not business partners (as discussed below) for their direct marketing purposes unless you consent. Meow Mobile may use certain services to prevent fraud.</p>
+
+    <p>We also may use and share with third parties, including advertisers, non-personal information you provide when using the Services, such as general demographic and location information that does not identify you personally. Advertisers may use this information to make predictions about your interests or preferences and display advertisements on our Services and other sites across the Internet tailored to your interests. The use and disclosure of such non-personal information are not subject to any restrictions under this Privacy Policy.</p>
+
+    <h3>Disclosures to Provide Services</h3>
+
+    <p>The categories of third parties we may share your information with are described below.</p>
+
+    <h4>Advertising Partners</h4>
+
+    <p>We may share information collected from you on the Meow Mobile Site or the Mobile Applications with third-party service providers or consultants who need access to the data to perform their work on Meow Mobile's behalf, such as a website analytics company or our third-party advertising partners. These third-party service providers are limited to accessing or using this data only to provide services to us. They must provide reasonable assurances that they will appropriately safeguard the information.</p>
+
+    <h4>Affiliates</h4>
+
+    <p>We may share Personal Information with businesses controlled by or under common control.</p>
+
+    <h4>Business Partners</h4>
+
+    <p>We may share your Personal Information with business partners to provide you with a product or service that may interest you. We may also share your personal information with business partners with whom we offer products or services jointly. These partners may also use our information to customize offers and services for you or their marketing purposes.</p>
+
+    <h4>Network Partners</h4>
+
+    <p>We may share information with our underlying network infrastructure partners and Network Provider host carriers as necessary to provide wireless telecommunications services to you.</p>
+
+    <h4>Service Providers and other partners</h4>
+
+    <p>We may share your Personal Information with our vendors, third-party service providers, and partners who use that information to help us provide our Services. This includes service providers that provide us with:</p>
+
+    <ul>
+      <li>Hosting and maintenance</li>
+      <li>Customer relationship management</li>
+      <li>Data storage and management</li>
+      <li>Fraud prevention and security</li>
+      <li>Content threat analysis and compliance</li>
+      <li>Payment processing, Shipping, and fulfillment services</li>
+      <li>Network infrastructure and telecommunications services</li>
+      <li>Identity verification services</li>
+      <li>Customer support services</li>
+    </ul>
+
+    <p>We only provide our service providers with the information necessary for them to perform these services on our behalf. Each Service Provider and its subcontractors must agree to use reasonable security procedures, comply with the law, and adopt other practices appropriate to the nature of the information involved to protect your Personal Information and Contact Data from unauthorized access, use, or disclosure. Service Providers are prohibited from using Personal Information or Contact Data other than as specified by us.</p>
+
+    <h4>Standard Analytics Information</h4>
+
+    <p>We may use and disclose certain aggregate or anonymous data regarding the Site and Services to third parties.</p>
+
+    <h3>Disclosures to Protect Others</h3>
+
+    <p>We may disclose your Personal Information to a third party if:</p>
+
+    <p>(i) we believe that disclosure is reasonably necessary to comply with any applicable law, regulation, legal process, or government request (including to meet national security or law enforcement requirements such as subpoenas or court orders),</p>
+    <p>(ii) to obtain legal advice,</p>
+    <p>(iii) to enforce our agreements and policies,</p>
+    <p>(iv) to protect the security or integrity of the Meow Mobile Site, Mobile Applications, or our services and products,</p>
+    <p>(v) to protect ourselves, our other customers, or the public from harm or illegal activities,</p>
+    <p>(vi) to respond to an emergency which we believe in good faith requires us to disclose information to assist in preventing a death or serious bodily injury; or (vii) permitted by law.</p>
+
+    <p>We may disclose, without your consent, the approximate location of your wireless device to a governmental entity or law enforcement authority when we are served with lawful process or reasonably believe there is an emergency involving risk of death or serious physical harm.</p>
+
+    <p>If Meow Mobile is required by law to disclose any of the Personal Information that directly identifies you, then we will use reasonable efforts to provide you with notice of that disclosure requirement unless we are prohibited from doing so by statute, subpoena, court, or administrative order. Further, we object to requests that we do not believe were issued properly.</p>
+
+    <h3>Disclosure in the event of merger, sale, or other asset transfers</h3>
+
+    <p>If we go through a corporate sale, merger, reorganization, receivership, dissolution, purchase or sale of assets, financing, bankruptcy, insolvency, reorganization, assignment for the benefit of creditors, or similar event, your Personal Information and Usage Data may be part of the assets sold, transferred, or shared in connection with due diligence for any such transaction as permitted by law and/or contract. Any acquirer or successor of Meow Mobile may continue to use the information we collect from you through our website as described in this policy.</p>
+
+    <!-- INFORMATION FROM CHILDREN -->
+    <h2>Information from Children</h2>
+
+    <p>We do not knowingly collect Personal Information from children under 13 (or older as required by law). We do not knowingly solicit children to purchase any of our products or services, including wireless service plans. However, we may provide wireless services to minors with the express authorization of their parent or legal guardian, whose approval may be revoked at any time, resulting in the termination of wireless service.</p>
+
+    <p>If we become aware that we have inadvertently received Personal Information from a child under 13 without proper parental consent, we will delete such information from our records. In addition, we recommend that minors aged 13 years or older obtain parental permission before sending any information about themselves to anyone over the Internet. If you believe we have information from or about anyone under 13, please contact us as described in the "<a href="#contact-us">Contact Us</a>" section below.</p>
+
+    <!-- OTHER PROVISIONS -->
+    <h2>Other Provisions</h2>
+
+    <h3>International Data Transfers</h3>
+
+    <p>All Personal Information we collect is stored and processed in the United States. However, certain authorized personnel, located outside the United States, including Singapore, may access Personal Information in connection with business operations. By using our Services, you acknowledge that your Personal Information may be accessed from locations outside the United States, including Singapore, and you consent to such access and transfer. We take steps to ensure that any access to Personal Information from outside the United States complies with applicable data protection requirements.</p>
+
+    <h3>Security of Your Information; Links to Other Websites</h3>
+
+    <p>We are very concerned about safeguarding the confidentiality of your information. We employ measures designed to protect your information from unauthorized access, including Secure Sockets Layer ("<strong>SSL</strong>") for all financial transactions through this Site. However, no data transmission over the Internet or other networks can be guaranteed 100% secure. As a result, while we strive to protect information transmitted on or through the Site or Services, we cannot guarantee the security of any information you transmit on or through the Site or Services, and you do so at your own risk. We also cannot guarantee that unauthorized access, hacking, data loss, or a data breach will never occur.</p>
+
+    <p>Once we receive your personal information, we take steps that we believe are reasonable to limit access to your personal information to only those employees and service providers whom we determine need access to the personal information to provide the requested products, services, offers, or opportunities that may be of interest to you or that you have ordered. However, even after we receive your personal information, we cannot and do not guarantee that your personal information will not be accessed, disclosed, altered, or destroyed as a result of a breach of our security efforts or as a result of any other event beyond our reasonable control. Accordingly, we cannot and do not guarantee that your personal information or any other information is entirely secure and safe from any risk.</p>
+
+    <p>Our Site and Services may contain links to other websites or allow others to send you such links. A link to a third party's website does not mean we endorse or are affiliated with it. We do not exercise control over third-party websites. You access such third-party websites or content at your own risk. You should always read the privacy policy of a third-party website before providing any information to the website.</p>
+
+    <h3>Your Sharing of Your Information</h3>
+
+    <p>Please be aware that whenever you share information on a publicly available profile page, community page, or any other public forum, the public may access it. In addition, when you share information in communications with third parties, that information may be passed along or made public by others. That means anyone accessing such information can use it for any purpose, including sending unsolicited communications.</p>
+
+    <h3>Global Privacy Control</h3>
+
+    <p>Meow Mobile participates in a service called the Global Privacy Control ("<strong>GPC</strong>") that lets you set a "Do Not Sell or Share" preference at the browser level. You'll need to have a GPC-enabled browser or browser extension that you'll activate or turn on in the browser. When you visit a website, your browser automatically sends the site a "Do Not Sell or Share" signal, and participating websites like ours will honor your preferences. Note: Not all browsers and extensions offer a GPC setting. To download a GPC-enabled browser, go to the <a href="https://globalprivacycontrol.org/" target="_blank" rel="noopener">Global Privacy Control website</a>. To check if our website received your GPC signal, click the "Do Not Sell or Share My Personal Information" link in our footer. If we receive your GPC signal, we'll automatically opt you out of selling your Personal Information and tell you that a GPC signal was used. When detecting your active GPC signal, we won't allow you to opt back into selling or sharing your Personal Information.</p>
+
+    <h3>Data Retention</h3>
+
+    <p>As explained in this Privacy Policy, we will store your Personal Information for as long as it is reasonably necessary for the purposes for which it was collected. In some circumstances, we may store your personal information for extended periods, for instance, where we are required to do so by legal, regulatory, tax, or accounting requirements. In specific circumstances, we may store your personal information for extended periods to record your dealings with us in case of any complaints or challenges, or if we reasonably believe there is a prospect of litigation relating to your personal information or dealings.</p>
+
+    <!-- YOUR PRIVACY RIGHTS AND CHOICES -->
+    <h2 id="your-privacy-rights-and-choices">Your Privacy Rights and Choices</h2>
+
+    <h3>Your Privacy Rights</h3>
+
+    <p>To the extent required by applicable law, you may have the right to:</p>
+
+    <ul>
+      <li><strong>Access, know, or port information</strong> about you, including (i) confirming whether we are processing your personal information; (ii) the specific pieces and categories of your personal information collected; (iii) the categories of sources from where your data is collected; (iv) the purpose for collecting your personal information; (v) the categories of third parties with whom we have shared your personal information; (vi) obtaining access to or a copy of your personal information in a structured, commonly used, and machine-readable format; and (vii) receiving an electronic copy of personal information that you have provided to us, or asking us to send that information to another company in a structured, commonly used, and machine-readable format (the "<strong>right of data portability</strong>").</li>
+      <li><strong>Request correction</strong> of your personal information where it is inaccurate or incomplete. In some cases, we may provide self-service tools that enable you to update your personal information or refer you to the controller who can correct your personal information.</li>
+      <li><strong>Request deletion</strong> of your personal information, subject to certain exceptions prescribed by law.</li>
+      <li><strong>Request restriction of or object to processing</strong> your personal information, including sensitive personal information.</li>
+      <li><strong>Withdraw your consent</strong> to our processing of your personal information.</li>
+      <li><strong>Restrict the use of sensitive personal information.</strong></li>
+      <li><strong>Access information on Automated Decision-Making</strong> related to your personal information.</li>
+    </ul>
+
+    <p>To exercise the rights listed above, please get in touch with us as described in the "<a href="#contact-us">Contact Us</a>" section below. Before taking any action regarding your information, we may ask you for additional information to confirm your identity and for security purposes.</p>
+
+    <p>Please note that even if you request that we delete the information we've collected from you, we may still retain your information in an aggregated or anonymized form that does not identify you. We also will not delete your information if we are legally required to maintain it, if it is necessary to comply with our legal obligations, resolve disputes, enforce our agreements, or protect against fraudulent, deceptive, or illegal activity.</p>
+
+    <h3>Your Privacy Choices</h3>
+
+    <h4>Marketing Communications</h4>
+
+    <p>If you decide that you no longer wish to receive emails or text messages from Meow Mobile that you had authorized, you may opt out of receiving emails and text messages by:</p>
+
+    <ul>
+      <li>Managing your account preferences on this Site</li>
+      <li>Clicking through an "Unsubscribe" link contained in all marketing emails</li>
+      <li>Texting STOP in response to any marketing text message from Meow Mobile</li>
+      <li>Any other reasonable opt-out method available to you</li>
+      <li>Contacting us as described in the "<a href="#contact-us">Contact Us</a>" section below</li>
+    </ul>
+
+    <p>Please note that Meow Mobile may have to communicate with you about product or service orders that you choose to place. You cannot opt out of receiving product or service-related communications.</p>
+
+    <h4>Online Advertising</h4>
+
+    <p>The online advertising industry provides websites from which you may opt out of receiving targeted ads from data and other advertising partners participating in self-regulatory programs. You can access these and learn more about targeted advertising, consumer choice, and privacy by visiting:</p>
+
+    <ul>
+      <li><a href="https://thenai.org/opt-out/" target="_blank" rel="noopener">Network Advertising Initiative</a></li>
+      <li><a href="https://optout.aboutads.info/?c=2&lang=EN" target="_blank" rel="noopener">Digital Advertising Alliance</a></li>
+      <li><a href="https://www.youronlinechoices.eu/" target="_blank" rel="noopener">European Digital Advertising Alliance</a></li>
+      <li><a href="https://youradchoices.ca/en/tools" target="_blank" rel="noopener">Digital Advertising Alliance of Canada</a></li>
+    </ul>
+
+    <p>To make separate choices for mobile apps on a mobile device, you can download DAA's AppChoices application from your device's app store. Alternatively, for some devices, you may use your device's platform controls in your settings to exercise your choice. Please see <a href="https://www.networkadvertising.org/mobile-choice/" target="_blank" rel="noopener">https://www.networkadvertising.org/mobile-choice/</a> for more information on how to opt out on mobile devices. Please note that you must separately opt out in each browser and on each device.</p>
+
+    <!-- SUPPLEMENTAL NOTICE FOR STATE PRIVACY LAWS -->
+    <h2>Supplemental Notice for State Privacy Laws</h2>
+
+    <p>This supplemental notice ("<strong>Supplemental Notice</strong>") for California, Colorado, Connecticut, Delaware, Iowa, Indiana, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Tennessee, Texas, Utah, Virginia residents ("<strong>Supplemental Notice States</strong>") only applies to our processing of Personal Information that is subject to the California Consumer Privacy Act ("<strong>CCPA</strong>"), the California Privacy Rights Act ("<strong>CPRA</strong>"), the Colorado Privacy Act ("<strong>CPA</strong>"), the Connecticut Data Privacy Act ("<strong>CDPA</strong>"), the Delaware Personal Data Privacy Act ("<strong>DPDPA</strong>"), the Iowa Consumer Data Protection Act ("<strong>ICDPA</strong>"), the Indiana Data Protection Act ("<strong>IDPA</strong>"), the Kentucky Data Privacy Act, the Maryland Online Data Privacy Act ("<strong>MODPA</strong>"), the Minnesota Consumer Data Privacy Act ("<strong>MCDPA</strong>"), the Montana Consumer Data Privacy Act ("<strong>MCDPA</strong>"), the Nebraska Data Privacy Act ("<strong>NDPA</strong>"), the New Jersey Data Protection Act ("<strong>NJDPA</strong>"), New Hampshire Privacy Act ("<strong>NHPA</strong>"), the Oregon Consumer Privacy Act ("<strong>OCPA</strong>"), the Rhode Island Data Transparency and Privacy Protection Act ("<strong>RIDTPPA</strong>") the Tennessee Information Protection Act ("<strong>TIPA</strong>"), the Texas Data Privacy and Security Act ("<strong>TDPSA</strong>"), the Utah Consumer Privacy Act ("<strong>UTCPA</strong>"), and the Virginia Consumer Data Protection Act ("<strong>VCDPA</strong>") (collectively the "State Privacy Law(s)") and applies solely to individuals ("<strong>Consumer</strong>" or "<strong>you</strong>"), who are residents of the states of California, Colorado, Connecticut, Delaware, Iowa, Maryland, Montana, Nebraska, New Jersey, New Hampshire, Oregon, Tennessee, Texas, Utah, and Virginia in our role as a business.</p>
+
+    <h3>Information We Collect</h3>
+
+    <p>In providing our Services, we may collect Personal Information. Personal Information does not include:</p>
+
+    <ul>
+      <li>Personal Information collected in the business-to-business context (defined as personal information reflecting a communication or transaction with a consumer, where that consumer is acting as an employee, owner, director, officer, or contractor of another business, non-profit or government entity, and where the communication or transaction occurs solely within the context of us conducting due diligence regarding or providing or receiving a product or service to or from the other business).</li>
+      <li>Deidentified or aggregated consumer information</li>
+      <li>Publicly available information from government records.</li>
+      <li>Personal Information excluded from the Supplemental Notice States scope, like health or medical information covered by the Health Insurance Portability and Accountability Act of 1996 ("<strong>HIPAA</strong>") or clinical trial data; Personal Information covered by specific sector-specific privacy laws, including the Fair Credit Reporting Act ("<strong>FCRA</strong>"), the Gramm-Leach-Bliley Act ("<strong>GLBA</strong>") or California Financial Information Privacy Act ("<strong>FIPA</strong>"), and the Driver's Privacy Protection Act of 1994.</li>
+    </ul>
+
+    <p>This Supplemental Notice does not address our handling of Personal Information about consumers, which we undertake on behalf of our customers to provide those customers with our products and services. In those contexts, we act as a service provider.</p>
+
+    <h3>Your Rights and Choices</h3>
+
+    <p>The State Privacy Laws provide state residents with specific rights regarding their Personal Information. If you are a resident of one of the states with State Privacy Laws, you can opt out of automated profiling that produces legal or similarly significant effects. Only you, or someone legally authorized to act on your behalf, may make a verifiable consumer request related to your Personal Information. You may also make a verifiable consumer request for your minor child. To designate an authorized agent, please get in touch with us as outlined in "<a href="#contact-us">Contact Us</a>" below and provide written authorization signed by you and your designated agent. To protect your privacy, we will take the following steps to verify your identity before fulfilling your request. When you make a request, we will ask you to provide sufficient information to confirm that you are the person from whom we collected personal information or an authorized representative. This may include asking you to answer questions regarding your account and use of our Services.</p>
+
+    <h3>Exercising Your Rights</h3>
+
+    <p>If you want to exercise your rights, you can contact us as outlined in the "<a href="#contact-us">Contact Us</a>" section below; we will respond to verifiable requests received as required by law. We may also ask you for additional information to verify or process your request. We may also check with third-party identity verification services to verify your identity before taking any action regarding your personal information. We will respond substantively to your verifiable requests within the periods required by law, which is most likely within 45 days unless additional time (up to 45 extra days) is needed, in which case we will let you know.</p>
+
+    <p>Certain states permit businesses to charge consumers a fee if their requests are excessive; we may charge a fee for excessive requests.</p>
+
+    <h3>Verifiable Requests for Copy, Deletion, and Right to Know</h3>
+
+    <p>Subject to certain exceptions, California consumers can make the following requests twice every twelve (12) months. If we determine that the consumer's request is excessive, we may charge a fee or notify the consumer of the reason for the denial of the request.</p>
+
+    <h3>Sales of Personal Information and Targeted Advertising</h3>
+
+    <p>While we do not sell Personal Information for monetary consideration, we work with nonaffiliated third parties for marketing purposes that help deliver targeted advertising to you. Our use of these services may be considered a "sale" or "sharing" of your Personal Information under certain State Privacy Laws. You may opt out of such selling by emailing us at <a href="mailto:support@meow-mobile.co">support@meow-mobile.co</a> or reaching out to us using a contact method listed in the "<a href="#contact-us">Contact Us</a>" section below.</p>
+
+    <h3>Sensitive Personal Information</h3>
+
+    <p>California residents have the right to limit the use of "sensitive personal information" (as defined in the CCPA). However, Meow Mobile already only collects or processes sensitive personal information with your consent and for those purposes specified in the CCPA. Meow Mobile also does not use sensitive personal information to infer characteristics about you.</p>
+
+    <h3>Incentives and Discrimination</h3>
+
+    <p>We will not discriminate against you for exercising your State Privacy Law rights. We may offer specific financial incentives permitted by State Privacy Laws with different prices, rates, or quality levels. Any permitted financial incentive we provide in the Supplemental Notice States will reasonably relate to your Personal Information's value and contain written terms describing the program's material aspects. Participation in an economic incentive program requires prior opt-in consent, which you may revoke at any time.</p>
+
+    <h3>How to Resolve Disputes Relating to Our Privacy Practices</h3>
+
+    <p>If you have a dispute about our privacy practices, please get in touch with us as described in the "<a href="#contact-us">Contact Us</a>" section below. If we decline to act in response to any of your privacy requests, you have the right to appeal that decision within a reasonable amount of time, but no later than 90 days from the date of our decision. To submit an appeal request, you can exercise this right by contacting us as described in the "<a href="#contact-us">Contact Us</a>" section below. If you believe your rights have been violated and cannot resolve the issue directly with us, you may file a complaint with your state attorney general's office.</p>
+
+    <h3>California's "Shine the Light" Law</h3>
+
+    <p>Civil Code Section &sect;1798.83 permits users of our Sites and Services who are California residents to request certain information regarding our disclosure of Personal Information to third parties for their direct marketing purposes. To make such a request, please get in touch with us as outlined in "<a href="#contact-us">Contact Us</a>" below.</p>
+
+    <!-- SUPPLEMENTAL NOTICE FOR NEVADA RESIDENTS -->
+    <h2>Supplemental Notice for Nevada Residents</h2>
+
+    <p>If you are a resident of Nevada, you have the right to opt out of the sale of certain Personal Information to third parties. You can exercise this right by contacting us as outlined in "<a href="#contact-us">Contact Us</a>" below with the subject line "Nevada Do Not Sell Request" and providing us with your name and the email address associated with your account. Please note that we do not currently sell your Personal Information as sales are defined in Nevada Revised Statutes Chapter 603A. If you have any questions, please get in touch with us as outlined in "<a href="#contact-us">Contact Us</a>" below.</p>
+
+    <!-- REVISIONS TO THIS PRIVACY POLICY -->
+    <h2>Revisions to This Privacy Policy</h2>
+
+    <p>From time to time, we may revise this Privacy Policy. Your use of the Site or any Meow Mobile product or service following the posting of any revised Privacy Policy shall be deemed acceptance of the revised policy. We may notify you of changes, and you are responsible for ensuring we have up-to-date contact information for you, and for periodically reviewing this privacy policy to check for any changes. Continued use of the Site or any Meow Mobile product or service constitutes your agreement to any Privacy Policy as in effect. If you disagree with the terms of the Privacy Policy at any time, you may exercise your rights under applicable law or discontinue using our services.</p>
+
+    <!-- CONTACT US -->
+    <h2 id="contact-us">Contact Us</h2>
+
+    <p>If you have questions about this policy or our privacy practices, you may request more information by contacting us at:</p>
+
+    <div class="contact-block">
+      <p><strong>Meow Mobile</strong></p>
+      <p>Attn: Customer Experience</p>
+      <p>125 University Avenue, Suite 160</p>
+      <p>Palo Alto, CA 94301</p>
+      <p>&nbsp;</p>
+      <p><strong>Phone:</strong> 1-888-629-6369</p>
+      <p><strong>Email:</strong> <a href="mailto:support@meow-mobile.co">support@meow-mobile.co</a></p>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__copy">&copy; 2026 Telco Papa Ltd. All rights reserved.</p>
+      <p class="footer__mvno">Telco Papa Ltd is an authorized MVNO operating on the AT&amp;T network.</p>
+      <div class="footer__links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
