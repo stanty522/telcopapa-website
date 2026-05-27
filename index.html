@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Telco Papa Ltd — Wireless Infrastructure &amp; MVNO Operations</title>
+  <meta name="description" content="Telco Papa Ltd builds wireless products for distinct customer communities.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Telco Papa Ltd — Wireless Infrastructure & MVNO Operations">
+  <meta property="og:description" content="Telco Papa Ltd builds wireless products for distinct customer communities.">
+  <meta property="og:url" content="https://telcopapa.com">
+  <meta property="og:image" content="https://telcopapa.com/assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Telco Papa Ltd — Wireless Infrastructure & MVNO Operations">
+  <meta name="twitter:description" content="Telco Papa Ltd builds wireless products for distinct customer communities.">
+  <meta name="twitter:image" content="https://telcopapa.com/assets/og-image.png">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="canonical" href="https://telcopapa.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #FAF9F6;
+      --bg-dark: #0B1120;
+      --text: #1B1F3B;
+      --text-muted: #5A5F7A;
+      --accent: #FF4D00;
+      --accent-glow: #FF6B2B;
+      --link: #2563EB;
+      --card-bg: #FFFFFF;
+      --border: #E2E0DC;
+      --max-w: 720px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── ACCENT BAR ── */
+    body::before {
+      content: '';
+      display: block;
+      height: 6px;
+      background: linear-gradient(90deg, var(--accent) 0%, var(--accent-glow) 40%, var(--accent) 100%);
+    }
+
+    /* ── HEADER ── */
+    .header {
+      padding: 80px 24px 64px;
+      text-align: center;
+    }
+
+    .header__logo {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 900;
+      font-size: clamp(2.8rem, 8vw, 4.5rem);
+      color: var(--text);
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin-bottom: 8px;
+    }
+
+    .header__logo span {
+      color: var(--accent);
+    }
+
+    .header__sub {
+      font-size: 0.85rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-muted);
+      margin-top: 12px;
+    }
+
+    /* ── CONTENT WRAPPER ── */
+    .content {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── DIVIDER ── */
+    .divider {
+      width: 48px;
+      height: 4px;
+      background: var(--accent);
+      border: none;
+      margin: 0 auto 48px;
+      border-radius: 2px;
+    }
+
+    /* ── INTRO ── */
+    .intro {
+      padding-bottom: 72px;
+    }
+
+    .intro p {
+      font-size: 1.15rem;
+      line-height: 1.75;
+      color: var(--text);
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* ── BRANDS SECTION ── */
+    .brands {
+      background: var(--bg-dark);
+      padding: 72px 24px;
+      margin: 0 calc(-50vw + 50%);
+      width: 100vw;
+      position: relative;
+    }
+
+    .brands::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background:
+        radial-gradient(ellipse at 20% 50%, rgba(255, 77, 0, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 50%, rgba(37, 99, 235, 0.04) 0%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .brands__inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+
+    .brands h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(1.8rem, 5vw, 2.4rem);
+      color: #FFFFFF;
+      margin-bottom: 40px;
+      letter-spacing: -0.02em;
+    }
+
+    .brand-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    @media (max-width: 560px) {
+      .brand-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ── BRAND CARD (active) ── */
+    .brand-card {
+      border-radius: 16px;
+      overflow: hidden;
+      position: relative;
+      aspect-ratio: 4 / 3;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      text-decoration: none;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .brand-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .brand-card--meow {
+      background: url('assets/meow-hero.webp') center/cover no-repeat;
+    }
+
+    .brand-card__overlay {
+      background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.3) 50%, transparent 100%);
+      padding: 24px 20px 20px;
+    }
+
+    .brand-card__icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .brand-card__name {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: #FFFFFF;
+      margin-bottom: 4px;
+    }
+
+    .brand-card__tagline {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.8);
+      line-height: 1.5;
+    }
+
+    .brand-card__arrow {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s;
+    }
+
+    .brand-card:hover .brand-card__arrow {
+      background: var(--accent);
+    }
+
+    .brand-card__arrow svg {
+      width: 14px;
+      height: 14px;
+      stroke: #fff;
+      stroke-width: 2;
+      fill: none;
+    }
+
+    /* ── COMING SOON CARD ── */
+    .brand-card--soon {
+      background: linear-gradient(135deg, #1a2040 0%, #141830 50%, #1e2550 100%);
+      border: 1px solid rgba(255,255,255,0.06);
+      cursor: default;
+    }
+
+    .brand-card--soon:hover {
+      transform: none;
+      box-shadow: none;
+    }
+
+    .brand-card--soon .soon-inner {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .soon-inner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 20px,
+          rgba(255,255,255,0.015) 20px,
+          rgba(255,255,255,0.015) 21px
+        );
+      pointer-events: none;
+    }
+
+    .soon-blur {
+      width: 60px;
+      height: 60px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(255,77,0,0.15), rgba(37,99,235,0.15));
+      filter: blur(8px);
+    }
+
+    .soon-label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: rgba(255,255,255,0.3);
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── CONTACT ── */
+    .contact {
+      padding: 72px 0 80px;
+    }
+
+    .contact .section-label {
+      color: var(--accent);
+    }
+
+    .contact h2 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(1.8rem, 5vw, 2.4rem);
+      color: var(--text);
+      margin-bottom: 32px;
+      letter-spacing: -0.02em;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @media (max-width: 560px) {
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+
+    .contact-item {
+      padding: 24px;
+      background: var(--card-bg);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .contact-item__label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .contact-item__value {
+      font-size: 0.95rem;
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .contact-item__value a {
+      color: var(--link);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s;
+    }
+
+    .contact-item__value a:hover {
+      border-color: var(--link);
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      background: var(--bg-dark);
+      padding: 48px 24px;
+      text-align: center;
+      color: rgba(255,255,255,0.5);
+      font-size: 0.85rem;
+      line-height: 1.8;
+    }
+
+    .footer__inner {
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .footer__copy {
+      margin-bottom: 6px;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .footer__mvno {
+      margin-bottom: 20px;
+      font-size: 0.8rem;
+    }
+
+    .footer__links {
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer__links a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 0.8rem;
+      transition: color 0.2s;
+    }
+
+    .footer__links a:hover {
+      color: var(--accent);
+    }
+
+    /* ── LOAD ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .header { animation: fadeUp 0.7s ease both; }
+    .intro { animation: fadeUp 0.7s ease 0.15s both; }
+    .brands { animation: fadeUp 0.7s ease 0.3s both; }
+    .contact { animation: fadeUp 0.7s ease 0.45s both; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <h1 class="header__logo">Telco Papa<span>.</span></h1>
+  </header>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="content">
+      <hr class="divider">
+      <p>We build wireless products for distinct customer communities.</p>
+    </div>
+  </section>
+
+  <!-- BRANDS -->
+  <section class="brands">
+    <div class="brands__inner">
+      <p class="section-label">Portfolio</p>
+      <h2>Our Brands</h2>
+      <div class="brand-grid">
+
+        <!-- Meow Mobile (active) -->
+        <a href="https://www.meow-mobile.co" target="_blank" rel="noopener" class="brand-card brand-card--meow">
+          <span class="brand-card__arrow">
+            <svg viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+          </span>
+          <div class="brand-card__overlay">
+            <img src="assets/meow-favicon.png" alt="Meow Mobile" class="brand-card__icon">
+            <div class="brand-card__name">Meow Mobile</div>
+            <div class="brand-card__tagline">Wireless for cat owners. $15/month with 24/7 vet telehealth.</div>
+          </div>
+        </a>
+
+        <!-- Coming Soon 1 -->
+        <div class="brand-card brand-card--soon">
+          <div class="soon-inner">
+            <div class="soon-blur"></div>
+            <span class="soon-label">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- Coming Soon 2 -->
+        <div class="brand-card brand-card--soon">
+          <div class="soon-inner">
+            <div class="soon-blur" style="background: linear-gradient(135deg, rgba(37,99,235,0.15), rgba(139,92,246,0.15));"></div>
+            <span class="soon-label">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- Coming Soon 3 -->
+        <div class="brand-card brand-card--soon">
+          <div class="soon-inner">
+            <div class="soon-blur" style="background: linear-gradient(135deg, rgba(16,185,129,0.15), rgba(37,99,235,0.15));"></div>
+            <span class="soon-label">Coming Soon</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact">
+    <div class="content">
+      <p class="section-label">Get in Touch</p>
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-item">
+          <div class="contact-item__label">Mailing Address</div>
+          <div class="contact-item__value">
+            Telco Papa Ltd<br>
+            254 Chapman Road, Suite 208,<br>
+            #23974<br>
+            Newark, DE 19702
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item__label">Email</div>
+          <div class="contact-item__value">
+            <a href="mailto:hello@telcopapa.com">hello@telcopapa.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__copy">&copy; 2026 Telco Papa Ltd. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
